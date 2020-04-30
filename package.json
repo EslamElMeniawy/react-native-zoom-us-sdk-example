@@ -1,0 +1,38 @@
+{
+  "name": "ZoomTest",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "android": "adb reverse tcp:8081 tcp:8081 && adb reverse tcp:9090 tcp:9090 && yarn react-native run-android",
+    "androidR": "yarn react-native run-android --variant=release",
+    "androidC": "cd android && ./gradlew clean && cd ..",
+    "androidA": "cd android && ./gradlew assembleRelease && cd ..",
+    "androidB": "cd android && ./gradlew bundleRelease && cd ..",
+    "ios": "yarn react-native run-ios --simulator=\"iPhone 11 Pro Max\"",
+    "iosR": "yarn react-native run-ios --simulator=\"iPhone 11 Pro Max\" --configuration Release",
+    "iosP": "cd ios && pod install && cd ..",
+    "start": "yarn react-native start",
+    "linkRes": "yarn react-native link",
+    "test": "jest",
+    "lint": "eslint ."
+  },
+  "dependencies": {
+    "react": "16.11.0",
+    "react-native": "0.62.2",
+    "react-native-pure-jwt": "^2.2.1",
+    "react-native-zoom-us-sdk": "file:./../react-native-zoom-us-sdk"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/runtime": "^7.6.2",
+    "@react-native-community/eslint-config": "^0.0.5",
+    "babel-jest": "^24.9.0",
+    "eslint": "^6.5.1",
+    "jest": "^24.9.0",
+    "metro-react-native-babel-preset": "^0.58.0",
+    "react-test-renderer": "16.11.0"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}
