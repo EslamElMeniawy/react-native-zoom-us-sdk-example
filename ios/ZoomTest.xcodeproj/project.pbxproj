@@ -11,28 +11,8 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4ED27D5C2459CB270064385D /* MobileRTC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED27D502459C5A10064385D /* MobileRTC.framework */; };
-		4ED27D5D2459CB270064385D /* MobileRTC.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED27D502459C5A10064385D /* MobileRTC.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4ED27D5F2459CB310064385D /* MobileRTCScreenShare.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED27D572459C5BE0064385D /* MobileRTCScreenShare.framework */; };
-		4ED27D602459CB310064385D /* MobileRTCScreenShare.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4ED27D572459C5BE0064385D /* MobileRTCScreenShare.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		4ED27D622459CB4A0064385D /* MobileRTCResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 4ED27D612459CB4A0064385D /* MobileRTCResources.bundle */; };
 		E75DBCF62D60E5BB554BF3A4 /* libPods-ZoomTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 92E47A585871471708C43959 /* libPods-ZoomTest.a */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		4ED27D5E2459CB280064385D /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				4ED27D602459CB310064385D /* MobileRTCScreenShare.framework in Embed Frameworks */,
-				4ED27D5D2459CB270064385D /* MobileRTC.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		008F07F21AC5B25A0029DE68 /* main.jsbundle */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = main.jsbundle; sourceTree = "<group>"; };
@@ -47,10 +27,6 @@
 		331570640D693A641DF9F26D /* libPods-ZoomTest-ZoomTestTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomTest-ZoomTestTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F2C2D988D5C34A5E6AF844F /* Pods-ZoomTest-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomTest-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomTest-tvOSTests/Pods-ZoomTest-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		47441E15FEAA55CF4EA89F2B /* Pods-ZoomTest-ZoomTestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomTest-ZoomTestTests.debug.xcconfig"; path = "Target Support Files/Pods-ZoomTest-ZoomTestTests/Pods-ZoomTest-ZoomTestTests.debug.xcconfig"; sourceTree = "<group>"; };
-		4ED27D502459C5A10064385D /* MobileRTC.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileRTC.framework; path = lib/MobileRTC.framework; sourceTree = "<group>"; };
-		4ED27D542459C5B00064385D /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobileRTCResources.bundle; path = lib/MobileRTCResources.bundle; sourceTree = "<group>"; };
-		4ED27D572459C5BE0064385D /* MobileRTCScreenShare.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileRTCScreenShare.framework; path = lib/MobileRTCScreenShare.framework; sourceTree = "<group>"; };
-		4ED27D612459CB4A0064385D /* MobileRTCResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = MobileRTCResources.bundle; path = lib/MobileRTCResources.bundle; sourceTree = "<group>"; };
 		61B23339651CDF0E47241CAA /* Pods-ZoomTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomTest.release.xcconfig"; path = "Target Support Files/Pods-ZoomTest/Pods-ZoomTest.release.xcconfig"; sourceTree = "<group>"; };
 		8749D4C62E226107B9683C06 /* Pods-ZoomTest-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZoomTest-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-ZoomTest-tvOSTests/Pods-ZoomTest-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
 		92E47A585871471708C43959 /* libPods-ZoomTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-ZoomTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -68,9 +44,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED27D5C2459CB270064385D /* MobileRTC.framework in Frameworks */,
 				E75DBCF62D60E5BB554BF3A4 /* libPods-ZoomTest.a in Frameworks */,
-				4ED27D5F2459CB310064385D /* MobileRTCScreenShare.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -109,9 +83,6 @@
 		2D16E6871FA4F8E400B85C8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				4ED27D572459C5BE0064385D /* MobileRTCScreenShare.framework */,
-				4ED27D542459C5B00064385D /* MobileRTCResources.bundle */,
-				4ED27D502459C5A10064385D /* MobileRTC.framework */,
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
 				92E47A585871471708C43959 /* libPods-ZoomTest.a */,
@@ -132,7 +103,6 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
-				4ED27D612459CB4A0064385D /* MobileRTCResources.bundle */,
 				13B07FAE1A68108700A75B9A /* ZoomTest */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,
@@ -165,7 +135,8 @@
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				4ED27D5E2459CB280064385D /* Embed Frameworks */,
+				0675E1883A3E01B2F5D839FF /* [CP] Embed Pods Frameworks */,
+				52DC3695C932DC0A0E71EFF0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -213,7 +184,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4ED27D622459CB4A0064385D /* MobileRTCResources.bundle in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
 			);
@@ -236,6 +206,24 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		0675E1883A3E01B2F5D839FF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomTest/Pods-ZoomTest-frameworks.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-zoom-us-sdk/ios/lib/MobileRTC.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobileRTC.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZoomTest/Pods-ZoomTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 		06DCEB5AEE044F295A38B18E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -256,6 +244,24 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		52DC3695C932DC0A0E71EFF0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZoomTest/Pods-ZoomTest-resources.sh",
+				"${PODS_ROOT}/../../node_modules/react-native-zoom-us-sdk/ios/lib/MobileRTCResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MobileRTCResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZoomTest/Pods-ZoomTest-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		FD10A7F022414F080027D42C /* Start Packager */ = {
