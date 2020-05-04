@@ -3,11 +3,15 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ZoomTest.iml" filepath="$PROJECT_DIR$/ZoomTest.iml" group="ZoomTest" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/android-react-native-pure-jwt.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/android-react-native-pure-jwt.iml" group="ZoomTest/react-native-pure-jwt" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/android-react-native-zoom-us-sdk.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/android-react-native-zoom-us-sdk.iml" group="ZoomTest/react-native-zoom-us-sdk" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" group="ZoomTest/app" />
       <module fileurl="file://$PROJECT_DIR$/commonlib/commonlib.iml" filepath="$PROJECT_DIR$/commonlib/commonlib.iml" group="ZoomTest/commonlib" />
       <module fileurl="file://$PROJECT_DIR$/mobilertc/mobilertc.iml" filepath="$PROJECT_DIR$/mobilertc/mobilertc.iml" group="ZoomTest/mobilertc" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/react-native-pure-jwt.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/react-native-pure-jwt.iml" group="ZoomTest/react-native-pure-jwt" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/react-native-pure-jwt-android-react-native-pure-jwt.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-pure-jwt/android/react-native-pure-jwt-android-react-native-pure-jwt.iml" group="ZoomTest/react-native-pure-jwt" />
       <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/react-native-zoom-us-sdk.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/react-native-zoom-us-sdk.iml" group="ZoomTest/react-native-zoom-us-sdk" />
+      <module fileurl="file://$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/react-native-zoom-us-sdk-android-react-native-zoom-us-sdk.iml" filepath="$PROJECT_DIR$/../node_modules/react-native-zoom-us-sdk/android/react-native-zoom-us-sdk-android-react-native-zoom-us-sdk.iml" group="ZoomTest/react-native-zoom-us-sdk" />
     </modules>
   </component>
 </project>

@@ -1157,6 +1157,11 @@ acorn@^7.1.1:
   resolved "https://registry.yarnpkg.com/acorn/-/acorn-7.1.1.tgz#e35668de0b402f359de515c5482a1ab9f89a69bf"
   integrity sha512-add7dgA5ppRPxCFJoAGfMDi7PIBXq1RtGo7BhbLaxwrXPOmw8gq48Y9ozT01hUKy9byMjlR20EJhu5zlkErEkg==
 
+add@^2.0.6:
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/add/-/add-2.0.6.tgz#248f0a9f6e5a528ef2295dbeec30532130ae2235"
+  integrity sha1-JI8Kn25aUo7yKV2+7DBTITCuIjU=
+
 ajv@^6.10.0, ajv@^6.10.2, ajv@^6.5.5:
   version "6.12.2"
   resolved "https://registry.yarnpkg.com/ajv/-/ajv-6.12.2.tgz#c629c5eced17baf314437918d2da88c99d5958cd"
@@ -4956,8 +4961,9 @@ react-native-pure-jwt@^2.2.1:
   resolved "https://registry.yarnpkg.com/react-native-pure-jwt/-/react-native-pure-jwt-2.2.1.tgz#fdc02b9d10b2f99a00ce344fc84eedd0b315df24"
   integrity sha512-e4foOEiHLPEVH7KctYJ3R12i4icD5VJdVdDm7OnRNtQsgbAIHBYMDXqE/AqWH2kGtIEQruTQb67tmtNt2IRdfg==
 
-"react-native-zoom-us-sdk@file:./../react-native-zoom-us-sdk":
+"react-native-zoom-us-sdk@https://github.com/EslamElMeniawy/react-native-zoom-us-sdk":
   version "1.0.0"
+  resolved "https://github.com/EslamElMeniawy/react-native-zoom-us-sdk#31cd61a31e4c722c851fb98c12370d87eda0c98c"
 
 react-native@0.62.2:
   version "0.62.2"

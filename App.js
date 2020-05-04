@@ -8,10 +8,10 @@ const JwtApiKey = 'Replace this with your JWT API Key';
 const JwtApiSecret = 'Replace this with your JWT API Secret';
 const SdkApiKey = 'Replace this with your SDK API Key';
 const SdkApiSecret = 'Replace this with your SDK API Secret';
+const UserId = 'Replace this with user id (email)';
 
 export default class App extends Component {
   state = {
-    userId: 'eslam.elmeniawy@roqay.com.kw',
     jwtAccessToken: null,
     zoomToken: null,
     zoomAccessToken: null,
@@ -30,14 +30,14 @@ export default class App extends Component {
   render() {
     return (
       <View>
-        <Text style={{marginVertical: 20}}>
+        <Text style={{marginVertical: 50}}>
           {this.state.initializeResult &&
             `initializeResult::${JSON.stringify(this.state.initializeResult)}`}
         </Text>
 
         <Button title="Start Meeting" onPress={this._getJwtAccessToken} />
 
-        <Text style={{marginVertical: 20}}>
+        <Text style={{marginVertical: 50}}>
           {this.state.startResult &&
             `startResult::${JSON.stringify(this.state.startResult)}`}
         </Text>
@@ -46,7 +46,7 @@ export default class App extends Component {
           style={{
             flexDirection: 'row',
             justifyContent: 'space-around',
-            marginVertical: 20,
+            marginBottom: 50,
           }}>
           <TextInput
             style={{
@@ -80,10 +80,12 @@ export default class App extends Component {
           visible={this.state.inMeetingDialogVisible}>
           <View
             style={{
-              margin: 20,
+              marginVertical: 50,
+              marginHorizontal: 20,
               backgroundColor: 'white',
               borderRadius: 20,
-              padding: 20,
+              paddingVertical: 50,
+              paddingHorizontal: 20,
               shadowColor: '#000',
               shadowOffset: {
                 width: 0,
@@ -93,7 +95,7 @@ export default class App extends Component {
               shadowRadius: 3.84,
               elevation: 5,
             }}>
-            <Text style={{marginBottom: 20}}>
+            <Text style={{marginBottom: 50}}>
               You are already in active meeting
             </Text>
 
@@ -172,9 +174,9 @@ export default class App extends Component {
 
     request.open(
       'GET',
-      `https://api.zoom.us/v2/users/${
-        this.state.userId
-      }/token?type=token&access_token=${this.state.jwtAccessToken}`,
+      `https://api.zoom.us/v2/users/${UserId}/token?type=token&access_token=${
+        this.state.jwtAccessToken
+      }`,
     );
 
     request.send();
@@ -199,9 +201,9 @@ export default class App extends Component {
 
     request.open(
       'GET',
-      `https://api.zoom.us/v2/users/${
-        this.state.userId
-      }/token?type=zak&access_token=${this.state.jwtAccessToken}`,
+      `https://api.zoom.us/v2/users/${UserId}/token?type=zak&access_token=${
+        this.state.jwtAccessToken
+      }`,
     );
 
     request.send();
@@ -214,8 +216,21 @@ export default class App extends Component {
         this.state.zoomToken,
         this.state.zoomAccessToken,
         'meeting_123',
-        this.state.userId,
+        UserId,
         'Eslam El-Meniawy',
+        {
+          autoConnectAudio: true,
+          disableCallIn: true,
+          disableCallOut: true,
+          meetingInviteHidden: true,
+          meetingShareHidden: true,
+          meetingIdHidden: true,
+          meetingPasswordHidden: true,
+          meetingAudioHidden: true,
+          meetingVideoHidden: true,
+          meetingParticipantHidden: true,
+          meetingMoreHidden: true,
+        },
       );
 
       console.log('startResult', startResult);
@@ -266,6 +281,19 @@ export default class App extends Component {
         this.state.meetingNumber,
         this.state.meetingPassword,
         'Eslam El-Meniawy',
+        {
+          autoConnectAudio: true,
+          disableCallIn: true,
+          disableCallOut: true,
+          meetingInviteHidden: true,
+          meetingShareHidden: true,
+          meetingIdHidden: true,
+          meetingPasswordHidden: true,
+          meetingAudioHidden: true,
+          meetingVideoHidden: true,
+          meetingParticipantHidden: true,
+          meetingMoreHidden: true,
+        },
       );
 
       console.log('joinResult', joinResult);
