@@ -19,7 +19,7 @@
   "dependencies": {
     "add": "^2.0.6",
     "react": "16.11.0",
-    "react-native": "0.62.2",
+    "react-native": "0.69.12",
     "react-native-pure-jwt": "^2.2.1",
     "react-native-zoom-us-sdk": "https://github.com/EslamElMeniawy/react-native-zoom-us-sdk"
   },
