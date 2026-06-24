@@ -24,7 +24,7 @@
     "react-native-zoom-us-sdk": "https://github.com/EslamElMeniawy/react-native-zoom-us-sdk"
   },
   "devDependencies": {
-    "@babel/core": "^7.6.2",
+    "@babel/core": "^7.29.6",
     "@babel/runtime": "^7.26.10",
     "@react-native-community/eslint-config": "^0.0.5",
     "babel-jest": "^24.9.0",
